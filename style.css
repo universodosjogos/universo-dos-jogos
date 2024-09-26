@@ -19,6 +19,13 @@ body {
     ;
 }
 
+.centered-image {
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100%;   /* Garante que a imagem não ultrapasse a largura da página */
+    height: auto;      /* Mantém a proporção da imagem */
+}
+
 /* Estilo da barra de navegação */
 .navbar {
     display: flex;
