@@ -1,6 +1,7 @@
 /* Estilo para o corpo da página */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size:100%;
     background-color: rgb(245, 244, 239); 
     color: rgb(12, 5, 5); 
     margin: 0;
@@ -15,6 +16,7 @@ body {
 .content-wrapper {
     flex: 1;
     padding-top: 100px;
+    ;
 }
 
 /* Estilo da barra de navegação */
@@ -64,35 +66,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo do jogo de Matemática */
-#answer {
-    margin: 10px 0;
-    padding: 5px;
-    font-size: 18px;
+
+.centered-image {
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem horizontalmente */
+    max-width: 100%;   /* Garante que a imagem não ultrapasse a largura da página */
+    height: auto;      /* Mantém a proporção da imagem */
 }
 
-/* Estilo do jogo de Língua Portuguesa */
-#letters span {
-    margin: 10px;
-    padding: 10px;
-    background-color: #62ee22;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* Estilo do jogo de Ciências */
-img {
-    width: 100px;
-    margin: 10px;
-    cursor: pointer;
-}
-
-/* Estilo do jogo de Criatividade */
-canvas {
-    border: 2px solid #000;
-    margin-top: 10px;
-}
 
 /* Estilo do rodapé */
 .footer {
