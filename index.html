@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="livro.ico">
+    <title>Ensinando pelo Universo dos Jogos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        // Função para mostrar o conteúdo correspondente ao menu clicado
+        function showContent(id) {
+            var contents = document.getElementsByClassName('content');
+            // Esconde todas as seções de conteúdo
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+            // Mostra a seção de conteúdo correspondente ao id passado
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <div class="navbar">
+        <a href="javascript:void(0)" onclick="showContent('menu1')">Jogos de Matemática</a>
+        <a href="javascript:void(0)" onclick="showContent('menu2')">Jogos de Língua Portuguesa</a>
+        <a href="javascript:void(0)" onclick="showContent('menu3')">Jogos de Ciências</a>
+        <a href="javascript:void(0)" onclick="showContent('menu4')">Jogos de Criatividade</a>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content-wrapper">
+        <!-- Jogos de Matemática -->
+        <div id="menu1" class="content active">
+            <h2>Jogos de Matemática</h2>
+            <p>Explore diversos jogos educativos que ajudam as crianças a aprender conceitos matemáticos de forma divertida. Alguns dos jogos incluem:</p>
+            <ul>
+                <li><strong>1)Somando Brincando:</strong> Um jogo de somas simples onde as crianças combinam números para alcançar a solução correta. <a href="matematica.html" target="_blank" >Acesse o conteúdo de matemática</a></li> 
+                <li> <strong>2) Colagem:</strong>Fazer colagens com palitinhos de sorvete, folhas ou bolinhas de papel, é uma prática que proporciona à criança conhecer propriedades da matemática como formas, profundidades e dimensões.</li>
+                <li> <strong>3) Blocos de construção:</strong>Nessa atividade de matemática para educação infantil são necessários pequenos blocos, que podem ser de plástico, madeira ou os famosos “Legos”. Os pequenos terão contato com a geometria básica, usando tamanho e formas para a construção.</li>
+            </ul>
+        </div>
+
+        <!-- Jogos de Língua Portuguesa -->
+        <div id="menu2" class="content">
+            <h2>Jogos de Língua Portuguesa</h2>
+            <p>Os jogos de Língua Portuguesa incentivam a leitura, escrita e gramática através de atividades lúdicas. Confira alguns deles:</p>
+            <ul>
+                <li><strong>1) Formando Palavras:</strong> As crianças arrastam as letras para formar palavras corretas. <a href="palavras.html" target="_blank" >Acesse o conteúdo Palavras</a></li>
+                <li><strong>2) Desafio das Sílabas:</strong> Ajude o personagem a completar palavras dividindo-as em sílabas. <a href="silabas.html" target="_blank" >Acesse o conteúdo Sílabas</a></li>
+                <li><strong>3) Caça-palavras Infantil:</strong> Um jogo simples onde as crianças encontram palavras escondidas em uma grade de letras. <a href="caça.html" target="_blank" >Acesse o conteúdo Caça-palavras</a><li/>
+            </ul>
+        </div>
+
+        <!-- Jogos de Ciências -->
+        <div id="menu3" class="content">
+            <h2>Jogos de Ciências</h2>
+            <p>Ensine ciências de forma interativa e divertida. Jogos que estimulam a curiosidade das crianças incluem:</p>
+            <ul>
+                <li><strong>1)Explorando o Sistema Solar:</strong> As crianças aprendem sobre os planetas e o espaço de forma interativa. <a href="solar.html" target="_blank" > Acesse o conteúdo Exporando o sistema solar</a></li>
+                <li><strong>2)Aventuras com a Natureza:</strong> Jogos sobre animais, plantas e o meio ambiente.<a href="natureza.html" target="_blank" > Acesse o conteúdo Aventuras com a Natureza</a></li>
+                <li><strong>3)Experiências Virtuais:</strong> As crianças podem realizar experiências simples e seguras online. <a href="virtuais.html" target="_blank" >Acesse o conteúdo Experiências Virtuais</a></li>
+            </ul>
+        </div>
+
+        <!-- Jogos de Criatividade -->
+        <div id="menu4" class="content">
+            <h2>Jogos de Criatividade</h2>
+            <p>Desenvolva a criatividade das crianças com jogos que incentivam a imaginação e a arte:</p>
+            <ul>
+                <li><strong>1)Pintura Online:</strong> Um jogo onde as crianças podem colorir desenhos e criar suas próprias obras de arte. <a href="pintura.html" target="_blank" >Acesse o conteúdo Caça-palavras</a></li>
+                <li><strong>2)Construa sua Cidade:</strong> Um jogo de construção onde as crianças podem criar e personalizar uma cidade inteira. <a href="cidade.html" target="_blank" >Acesse o conteúdo Caça-palavras</a></li>
+                <li><strong>3)Teatro de Marionetes:</strong> As crianças podem criar e contar histórias com personagens virtuais. <a href="teatro.html" target="_blank" >Acesse o conteúdo Caça-palavras</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 Jogos Educativos. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a> | 
+            <a href="#">Termos de Uso</a> | 
+            <a href="#">Contato</a>
+        </div>
+    </footer>
+</body>
+</html>

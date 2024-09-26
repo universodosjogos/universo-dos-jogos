@@ -1,0 +1,117 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    background-color: rgb(245, 244, 239); 
+    color: rgb(12, 5, 5); 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Wrapper de conteúdo */
+.content-wrapper {
+    flex: 1;
+    padding-top: 100px;
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #62ee22; 
+    border-radius: 15px;
+    width: 80%;
+    padding: 10px 0;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links da navegação */
+.navbar a {
+    color: #fff; 
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+}
+
+.navbar a:hover {
+    background-color: #8bb379;
+}
+
+/* Conteúdo */
+.content {
+    display: none;
+    text-align: left;
+    padding: 20px;
+}
+
+.content.active {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do jogo de Matemática */
+#answer {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* Estilo do jogo de Língua Portuguesa */
+#letters span {
+    margin: 10px;
+    padding: 10px;
+    background-color: #62ee22;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilo do jogo de Ciências */
+img {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Estilo do jogo de Criatividade */
+canvas {
+    border: 2px solid #000;
+    margin-top: 10px;
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: #62ee22;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
